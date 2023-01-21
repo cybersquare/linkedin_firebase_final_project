@@ -1,0 +1,28 @@
+.news_item{
+    display: flex;
+    align-items: center;
+   padding-bottom: 10px;
+   margin-left: 10px;
+
+}
+
+.news_item__left{
+    font-size: 15px;
+
+}
+
+
+.news_item__right{
+
+}
+
+
+.news_item__right>h4{
+    font-size: 14px;
+    margin: 0px;
+}
+
+.news_item__right>p{
+    font-size: 12px;
+    margin: 0px;
+}

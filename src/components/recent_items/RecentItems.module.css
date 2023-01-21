@@ -1,0 +1,6 @@
+.sidebar__recent_items{
+    display: flex;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 5px;
+}

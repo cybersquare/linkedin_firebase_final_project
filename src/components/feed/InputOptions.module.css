@@ -1,0 +1,13 @@
+.input_options{
+    display: flex;
+    /* background-color: aqua; */
+    align-items: center;
+}
+
+h4{
+    margin-left: 10px;
+}
+
+input::placeholder{
+    font-weight: bold;
+}
