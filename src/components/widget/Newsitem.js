@@ -1,5 +1,6 @@
 import styles from "./NewsItem.module.css";
 import FiberManualRecord from '@mui/icons-material/FiberManualRecord';
+import React from "react";
 
 function NewsItem({title, subtitle}){
     return(

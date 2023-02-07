@@ -1,4 +1,5 @@
 import styles from "./RecentItems.module.css"
+import React from "react";
 
 function RecentItems(props){
     return(

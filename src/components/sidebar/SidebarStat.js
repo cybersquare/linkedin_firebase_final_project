@@ -1,4 +1,5 @@
 import styles from "./SidebarStat.module.css";
+import React from "react";
 
 function SidebarStat({text, data}){
     return(

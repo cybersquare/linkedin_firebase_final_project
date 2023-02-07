@@ -8,6 +8,5 @@
 .app__body{
   display:flex;
   background-color: #f3f2ee;
-  height: 100vh;
-
+  height: max-content;
 }

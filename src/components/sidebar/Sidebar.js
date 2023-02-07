@@ -1,4 +1,5 @@
 import { Avatar } from "@mui/material";
+import React from "react";
 import styles from "./Sidebar.module.css"
 import SidebarStat from "./SidebarStat";
 import RecentItems from "../recent_items/RecentItems";

@@ -1,5 +1,5 @@
 import styles from "./Widget.module.css";
-
+import React from "react";
 import Info from '@mui/icons-material/Info';
 import NewsItem from "./Newsitem";
 
