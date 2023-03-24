@@ -1,5 +1,4 @@
 .header{
-    /* background-color: blue; */
     position:sticky;
     display: flex;
     background-color:white;
@@ -10,12 +9,9 @@
     padding:10px 0px;
     height: 50px;
     z-index: 1;
-    
-
 }
 
 .header__left{
-    /* background-color: red; */
     display:flex
 }
 
@@ -26,13 +22,10 @@
 }
 
 .header__right{
-    /* background-color: green; */
-    display:flex
-    
+    display:flex  
 }
 
 .header__search{
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     height:20px;
@@ -45,5 +38,4 @@
     border: none;
     outline: none;
     background: none;
-
 }

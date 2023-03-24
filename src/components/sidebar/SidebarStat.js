@@ -8,7 +8,6 @@ function SidebarStat({text, data}){
             <p className={styles.SidebarStat__data}>{data}</p>
         </div>
     );
-
 }
 
 export default SidebarStat;

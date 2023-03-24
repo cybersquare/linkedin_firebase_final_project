@@ -5,16 +5,13 @@
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 10px;
-
 }
 
 .widget__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     padding-left: 10px;
     padding-right: 10px;
-  
 }
 

@@ -12,10 +12,8 @@ function NewsItem({title, subtitle}){
                 <h4>{title}</h4>
                 <p>{subtitle}</p>
             </div>
-
         </div>
     );
-
 }
 
 export default NewsItem;

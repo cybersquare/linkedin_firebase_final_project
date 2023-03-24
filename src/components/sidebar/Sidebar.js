@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Sidebar.module.css"
 import SidebarStat from "./SidebarStat";
 import RecentItems from "../recent_items/RecentItems";
+import Banner from "./banner.png"
 
 function Sidebar(){
 
@@ -12,7 +13,8 @@ function Sidebar(){
     return(
         <div className={styles.sidebar}>
             <div className={styles.sidebar__top}>
-                <img src="https://shorturl.at/hiwJY" alt="sidebar banner"/>
+                {/* <img src="https://shorturl.at/hiwJY" alt="sidebar banner"/> */}
+                <img src={Banner} alt="sidebar banner"/>
                 <Avatar src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
                  alt="avatar" className={styles.sidebar__avatar}/>
                 <h2 >Monish Mohan V T</h2>
@@ -31,9 +33,6 @@ function Sidebar(){
                     })
                 }
             </div>
-
-            
-
         </div>
     );
 }

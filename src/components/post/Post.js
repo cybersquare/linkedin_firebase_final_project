@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Post.module.css"
-import { Avatar } from "@mui/material";
 import InputOptions from "../feed/InputOptions";
+
+import { Avatar } from "@mui/material";
 import { ThumbsUpDown } from "@mui/icons-material";
 import { ChatOutlined } from "@mui/icons-material";
 import { ShareOutlined } from "@mui/icons-material";

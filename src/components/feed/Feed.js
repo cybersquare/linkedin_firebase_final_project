@@ -1,30 +1,23 @@
 import React from "react";
 import styles from "./Feed.module.css";
 import InputOptions from "./InputOptions";
+import Post from "../post/Post";
+
 import Image from '@mui/icons-material/Image';
 import Subscriptions from '@mui/icons-material/Subscriptions';
 import EventNote from '@mui/icons-material/EventNote';
 import CalendarViewDay from '@mui/icons-material/CalendarViewDay';
 import { Avatar } from "@mui/material";
-import Post from "../post/Post";
-
 
 
 function Feed(){
     const posts = [
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        {avatar:"", name: "Monish", description:"baabte system technologies", message:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis?"},
-        
+        {avatar:"", name: "Cybersquare", description:"baabte", message:"Lorem ipsum"},
+        {avatar:"", name: "Cybersquare", description:"baabte", message:"Lorem ipsum"},
+        {avatar:"", name: "Cybersquare", description:"baabte", message:"Lorem ipsum"},
+        {avatar:"", name: "Cybersquare", description:"baabte", message:"Lorem ipsum"},
+        {avatar:"", name: "Cybersquare", description:"baabte", message:"Lorem ipsum"},
+        {avatar:"", name: "Cybersquare", description:"baabte", message:"Lorem ipsum"},
     ]
     return(
         <div className={styles.feed}>
@@ -34,18 +27,13 @@ function Feed(){
                     <input type="text"  placeholder="Sart a post"/> 
                 </div>
                 <div className={styles.feed__input_options}>
-                    
                     <InputOptions Icon={Image} title="Photo" color="#70B5F9"/>
                     <InputOptions Icon={Subscriptions} title="Video" color="#E7833E"/>
                     <InputOptions Icon={EventNote} title="Event" color="#C0CBCD"/>
                     <InputOptions Icon={CalendarViewDay} title="Write article" color="#7FC15E"/>
                 </div>
             </div>
-
-            {
-                posts.map((post, index)=><Post data={post}/>)
-            }
-
+            {posts.map((post, index)=><Post data={post}/>)}
         </div>
     );
 }

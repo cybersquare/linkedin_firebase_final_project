@@ -3,19 +3,11 @@
     align-items: center;
    padding-bottom: 10px;
    margin-left: 10px;
-
 }
 
 .news_item__left{
     font-size: 15px;
-
 }
-
-
-.news_item__right{
-
-}
-
 
 .news_item__right>h4{
     font-size: 14px;

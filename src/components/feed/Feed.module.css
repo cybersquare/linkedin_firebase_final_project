@@ -1,18 +1,12 @@
 .feed{
-    /* background-color: blueviolet; */
     flex:0.5;
     margin-top: 10px;
     margin-left: 10px;
-    
-    
 }
-
 
 .feed__input_options{
     display: flex;
-    justify-content: space-evenly;
-    /* background-color: red; */
-    
+    justify-content: space-evenly;  
 }
 
 .feed__input_container{
@@ -21,14 +15,11 @@
     padding-left: 10px;
     background-color:white ;
     margin-bottom: 10px;
-
 }
 
 .feed__input{
     margin-top: 10px;
     display: flex;
-   
-    /* background-color: red; */
 }
 
 .feed__input>input{

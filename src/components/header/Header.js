@@ -9,8 +9,10 @@ import Notifications from '@mui/icons-material/Notifications';
 import logo from "../../logo.svg";
 import styles from "./Header.module.css";
 import HeaderOptions from "../header_options/HeaderOptions";
+import { useState } from "react";
 
 function Header(){
+    const [selectedTab, setSelectedTab] = useState("Home");
     return(
         <div className={styles.header}>
             <div className={styles.header__left}>
@@ -22,18 +24,25 @@ function Header(){
                
             </div>
             <div className={styles.header__right}>
-                <HeaderOptions Icon={Home}  title="Home"/>
-                <HeaderOptions Icon={SupervisorAccount} title="My Network"/>
-                <HeaderOptions Icon={BusinessCenter} title = "Jobs"/>
-                <HeaderOptions Icon={Chat} title = "Chat"/>
-                <HeaderOptions Icon={Notifications} title = "Notification"/>
+                <div onClick={()=>setSelectedTab("Home")} >
+                    <HeaderOptions Icon={Home}  title="Home" isSelected={selectedTab==="Home"?true:false}/>
+                </div>
+                <div onClick={()=>setSelectedTab("My Network")} >
+                    <HeaderOptions Icon={SupervisorAccount} title="My Network" isSelected={selectedTab==="My Network"?true:false}/>
+                </div>
+                <div onClick={()=>setSelectedTab("Jobs")} >
+                    <HeaderOptions Icon={BusinessCenter} title = "Jobs" isSelected={selectedTab==="Jobs"?true:false}/>
+                </div>
+                <div onClick={()=>setSelectedTab("Chat")} >
+                    <HeaderOptions Icon={Chat} title = "Chat" isSelected={selectedTab==="Chat"?true:false}/>
+                </div>
+                <div onClick={()=>setSelectedTab("Notification")} >
+                    <HeaderOptions Icon={Notifications} title = "Notification" isSelected={selectedTab==="Notification"?true:false}/>
+                </div>
                 <HeaderOptions avatar="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" title = "Me"/>
-                
-
             </div>
         </div>
     );
-
 }
 
 export default Header;

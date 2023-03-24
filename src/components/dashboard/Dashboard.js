@@ -7,7 +7,6 @@ import Feed from '../feed/Feed';
 import Widget from '../widget/Widget';
 import { Helmet } from 'react-helmet';
 
-
 function Dashboard(){
     return(
        

@@ -12,6 +12,12 @@
     font-weight: 400;
 }
 
+.header__options__title_selected{
+    font-size: 12px;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+}
+
 .header__options__icon{
     object-fit: contain;
     height: 25px !important;

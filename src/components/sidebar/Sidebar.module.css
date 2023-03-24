@@ -6,10 +6,7 @@
     height: fit-content;
     margin-top: 10px;
     flex-direction: column;
-    /* background-color: blue; */
     margin-left: 10%;
-
-
 }
 
 .sidebar__top{
@@ -19,8 +16,8 @@
     border-top-right-radius:  20px;
     align-items: center;
     background-color: #ffffff;
-   
 }
+
 .sidebar__top>img{
     border-top-left-radius:  20px;
     border-top-right-radius:  20px;
@@ -33,6 +30,7 @@
     margin: 5px;
     text-align: center;
 }
+
 .sidebar__top>h4{
     font-size: 12px;
     color: grey;
@@ -49,7 +47,6 @@
     margin-top: 2px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 .sidebar__bottom{

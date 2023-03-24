@@ -8,15 +8,12 @@
 .post__header{
     display: flex;
     align-items: center;
-    
 }
-
 
 .post__button{
     display: flex;
     justify-content: space-evenly;
     font-size: 15px;
-    
 }
 
 .post__info>h2, p{
