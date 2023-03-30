@@ -24,7 +24,7 @@ function Feed(){
             <div className={styles.feed__input_container}>
                 <div className={styles.feed__input}>
                 <Avatar src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"/>
-                    <input type="text"  placeholder="Sart a post"/> 
+                    <input type="text"  placeholder="Start a post"/> 
                 </div>
                 <div className={styles.feed__input_options}>
                     <InputOptions Icon={Image} title="Photo" color="#70B5F9"/>

@@ -3,8 +3,7 @@ import React from "react";
 
 import {Routes, Route} from "react-router-dom";
 
-const WebRoutes = ()=>{
-    
+const WebRoutes = ()=>{    
     return(
         <Routes > {Object.keys(RouteData).map((route_name,index)=>{
             let route = RouteData[route_name]
@@ -13,6 +12,5 @@ const WebRoutes = ()=>{
         </Routes>
     );
 }
-
 
 export default WebRoutes;

@@ -17,8 +17,8 @@ function Sidebar(){
                 <img src={Banner} alt="sidebar banner"/>
                 <Avatar src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
                  alt="avatar" className={styles.sidebar__avatar}/>
-                <h2 >Monish Mohan V T</h2>
-                <h4>Content development</h4>
+                <h2 >Athira M J</h2>
+                <h4>Software Trainee</h4>
             </div>
 
             <div className={styles.sidebar__stats}>

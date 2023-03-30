@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import fire from "../firebase";
 
 const auth = fire.auth;
@@ -11,8 +11,12 @@ export const userSlice = createSlice({
         user:null
     },
     reducers:{
-        login:(state, action)=>{
-           state.user = action.payload;
+        login:async (state, action)=>{
+            console.log(action.payload)
+        //    state.user = action.payload;
+        const userCredential = await signInWithEmailAndPassword(auth, action.payload.email, action.payload.password);
+        console.log(userCredential);
+        console.log(auth.currentUser);
         },
         logout:(state, action)=>{
             state.user=null;
@@ -32,3 +36,6 @@ export const {login,logout,signup} = userSlice.actions;
 export const selectUser = state=> state.user.user;
 
 export default userSlice.reducer;
+
+
+
