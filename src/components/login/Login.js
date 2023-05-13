@@ -6,6 +6,7 @@ import { login } from "../../app/UserSlice";
 import { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import fire from "../../firebase";
+import { Link } from "react-router-dom";
 
 //Assets
 import HeaderLogo from "../../assets/linkedin_header_logo.svg";
@@ -118,8 +119,9 @@ function Login() {
               target="_blank"
               rel="noopener 
                     noreferrer"
+              
             >
-              Join now
+             <Link to="/signup" style={{textDecoration:'none'}}>Join Now</Link>
             </a>
           </p>
         </div>

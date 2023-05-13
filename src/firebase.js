@@ -21,5 +21,4 @@ const auth = getAuth(app);
 
 const fire = { app, storage, firestore , auth};
 
-
 export default fire;

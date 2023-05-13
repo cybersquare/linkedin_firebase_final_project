@@ -16,6 +16,7 @@ function Signup() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -47,6 +48,24 @@ function Signup() {
             Make the most of your professional life
           </div>
           <div className={styles.signup__box_content}>
+
+
+          <label className={styles.input__label} forhtml="user-name">
+              Name
+            </label>
+            <input
+              className={styles.input__input}
+              required
+              id="user-name"
+              type="text"
+              name="user-name"
+              value={email}
+              onChange={() => {}}
+            />
+
+
+
+
             <label className={styles.input__label} forhtml="email-or-phone">
               Email or phone number
             </label>
